@@ -1,3 +1,4 @@
+using StringLibrary;
 namespace CalculatorApiTest;
 
 [TestClass]
