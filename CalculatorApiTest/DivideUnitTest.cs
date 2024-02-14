@@ -1,9 +1,8 @@
 using StringLibrary;
-using MyApp.Namespace;
 namespace CalculatorApiTest;
 
 [TestClass]
-public class UnitTest1
+public class DivideTest
 {
 
     [TestMethod]
@@ -15,7 +14,7 @@ public class UnitTest1
         var expected = 0m;
 
         // Act
-        var result = Calculator.Divide(firstDigit, secondDigit);
+        var result = CalclLogic.Divide(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -30,7 +29,7 @@ public class UnitTest1
         var expected = -2.76m;
 
         // Act
-        var result = Calculator.Divide(firstDigit, secondDigit);
+        var result = CalclLogic.Divide(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -45,7 +44,7 @@ public class UnitTest1
         var expected = -2m;
 
         // Act
-        var result = Calculator.Divide(firstDigit, secondDigit);
+        var result = CalclLogic.Divide(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -60,7 +59,7 @@ public class UnitTest1
         var expected = 5.25m;
 
         // Act
-        var result = calculator.Divide(firstDigit, secondDigit);
+        var result = CalclLogic.Divide(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -76,7 +75,7 @@ public class UnitTest1
         var expected = "Error!!";
 
         // Act
-        var result = Calculator.Divide(firstDigit, secondDigit);
+        var result = CalclLogic.Divide(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);

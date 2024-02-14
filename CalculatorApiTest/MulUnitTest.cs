@@ -3,7 +3,7 @@ using MyApp.Namespace;
 namespace CalculatorApiTest;
 
 [TestClass]
-public class UnitTest1
+public class MultiplyTest
 {
     [TestMethod]
     public void Test_Multiply_TwoPositiveNumbers()
@@ -14,7 +14,7 @@ public class UnitTest1
         var expected = 17.6m;
 
         // Act
-        var result = Calculator.Multiply(firstDigit, secondDigit);
+        var result = CalclLogic.Multiply(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -29,7 +29,7 @@ public class UnitTest1
         var expected = -33.6m;
 
         // Act
-        var result = Calculator.Multiply(firstDigit, secondDigit);
+        var result = CalclLogic.Multiply(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -44,7 +44,7 @@ public class UnitTest1
         var expected = 9.5m;
 
         // Act
-        var result = Calculator.Multiply(firstDigit, secondDigit);
+        var result = CalclLogic.Multiply(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -60,7 +60,7 @@ public class UnitTest1
         var expected = 0m;
 
         // Act
-        var result = Calculator.Multiply(firstDigit, secondDigit);
+        var result = CalclLogic.Multiply(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -75,7 +75,7 @@ public class UnitTest1
         var expected = 0m;
 
         // Act
-        var result = Calculator.Multiply(firstDigit, secondDigit);
+        var result = CalclLogic.Multiply(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);

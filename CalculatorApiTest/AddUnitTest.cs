@@ -1,5 +1,4 @@
 using StringLibrary;
-using MyApp.Namespace;
 
 namespace CalculatorApiTest;
 
@@ -13,7 +12,7 @@ public class AddUnitTest
         var secondDigit = 3.2m;
         var expected = 8.7m;
 
-        var result = Calculator.Add(firstDigit, secondDigit);
+        var result = CalclLogic.Add(firstDigit, secondDigit);
 
     // Assert
         Assert.AreEqual(expected, result);
@@ -28,7 +27,7 @@ public class AddUnitTest
             var expected = 7.3m;
 
             // Act
-            var result = Calculator.Add(firstDigit, secondDigit);
+            var result = CalclLogic.Add(firstDigit, secondDigit);
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -43,7 +42,7 @@ public class AddUnitTest
             var expected = -6.3m;
 
             // Act
-            var result = Calculator.Add(firstDigit, secondDigit);
+            var result = CalclLogic.Add(firstDigit, secondDigit);
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -58,7 +57,7 @@ public class AddUnitTest
             var expected = 4.7m;
 
             // Act
-            var result = Calculator.Add(firstDigit, secondDigit);
+            var result = CalclLogic.Add(firstDigit, secondDigit);
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -73,7 +72,7 @@ public class AddUnitTest
                 decimal expected = -6.9m;
 
                 // Act
-                var result = Calculator.Add(firstDigit, secondDigit);
+                var result = CalclLogic.Add(firstDigit, secondDigit);
 
                 // Assert
                 Assert.AreEqual(expected, result);

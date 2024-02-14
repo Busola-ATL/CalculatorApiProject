@@ -2,7 +2,7 @@ using StringLibrary;
 namespace CalculatorApiTest;
 
 [TestClass]
-public class UnitTest1
+public class SubtractTest
 {
     [TestMethod]
     public void Test_Subtract_TwoPositiveNumbers()
@@ -13,7 +13,7 @@ public class UnitTest1
         var expected = 7.3m;
 
         // Act
-        var result = Calculator.Subtract(firstDigit, secondDigit);
+        var result = CalclLogic.Subtract(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -28,7 +28,7 @@ public class UnitTest1
         var expected = 13.7m;
 
         // Act
-        var result = Calculator.Subtract(firstDigit, secondDigit);
+        var result = CalclLogic.Subtract(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -43,7 +43,7 @@ public class UnitTest1
         decimal expected = 1.3m;
 
         // Act
-        var result = Calculator.Subtract(firstDigit, secondDigit);
+        var result = CalclLogic.Subtract(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -59,7 +59,7 @@ public class UnitTest1
         decimal expected = -4.7m;
 
         // Act
-        var result = Calculator.Subtract(firstDigit, secondDigit);
+        var result = CalclLogic.Subtract(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);
@@ -74,7 +74,7 @@ public class UnitTest1
         decimal expected = 6.9m;
 
         // Act
-        var result = Calculator.Subtract(firstDigit, secondDigit);
+        var result = CalclLogic.Subtract(firstDigit, secondDigit);
 
         // Assert
         Assert.AreEqual(expected, result);

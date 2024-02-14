@@ -7,7 +7,23 @@ namespace MyApp.Namespace
     [ApiController]
     public class Calculator : ControllerBase
     {
-        decimal result = 0;
+        public  String Add(decimal num1, decimal num2) => CalclLogic.Add(num1, num2);
+
+        //Referencing add method from library class
+        public  String Subtract(decimal num1, decimal num2) => CalclLogic.Subtract(num1, num2);
+
+        //Referencing add method from library class
+        public  String Divide(decimal num1, decimal num2) => CalclLogic.Divide(num1, num2);
+
+        //Referencing add method from library class
+        public  String Multiply(decimal num1, decimal num2) => CalclLogic.Multiply(num1, num2);
+
+        //Referencing add method from library class
+        public  String Modulo(decimal num1, decimal num2) => CalclLogic.Modulo(num1, num2);
+
+
+
+        /*decimal result = 0;
         public String Add(decimal firstDigit, decimal secondDigit){
             result = firstDigit + secondDigit;
             return result.ToString();
@@ -47,5 +63,5 @@ namespace MyApp.Namespace
                 return result.ToString();
             }
         }
-    }
+    }*/
 }
